@@ -3,6 +3,8 @@ FROM alpine:3.5
 
 MAINTAINER John Felten<john.felten@gmail.com>
 
+ADD VERSION .
+
 # Install needed packages
 RUN echo "http://dl-4.alpinelinux.org/alpine/edge/community/" >> /etc/apk/repositories && \
     echo "http://dl-4.alpinelinux.org/alpine/edge/testing/" >> /etc/apk/repositories && \
